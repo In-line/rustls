@@ -16,7 +16,7 @@ base64 = "0.12"
 log = { version = "0.4.4", optional = true }
 ring = "0.16.11"
 sct = "0.6.0"
-webpki = "0.21.0"
+webpki = {git = "https://github.com/In-line/webpki.git", branch = "self-signed" }
 
 [features]
 default = ["logging"]

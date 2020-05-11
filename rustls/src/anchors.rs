@@ -29,6 +29,7 @@ impl OwnedTrustAnchor {
 
     pub fn to_trust_anchor(&self) -> webpki::TrustAnchor {
         webpki::TrustAnchor {
+	    is_end_entity: true,
             subject: &self.subject,
             spki: &self.spki,
             name_constraints: self.name_constraints
